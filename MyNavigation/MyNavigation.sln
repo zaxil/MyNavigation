@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNavigation", "MyNavigation\MyNavigation.csproj", "{55359B87-428F-41AD-AD3C-39509DC3FEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNavigation.Tests", "MyNavigation.Tests\MyNavigation.Tests.csproj", "{5BEA8FE8-3540-45B1-9852-05413EAC5474}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55359B87-428F-41AD-AD3C-39509DC3FEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55359B87-428F-41AD-AD3C-39509DC3FEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55359B87-428F-41AD-AD3C-39509DC3FEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55359B87-428F-41AD-AD3C-39509DC3FEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEA8FE8-3540-45B1-9852-05413EAC5474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEA8FE8-3540-45B1-9852-05413EAC5474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEA8FE8-3540-45B1-9852-05413EAC5474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEA8FE8-3540-45B1-9852-05413EAC5474}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
