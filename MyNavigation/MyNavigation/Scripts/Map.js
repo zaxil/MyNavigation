@@ -11,7 +11,7 @@ function displayMap(mapDivId)
             zoom: 11,
             mapTypeId:
                 google.maps.MapTypeId.ROADMAP,
-            center: torun   
+            center: torun
         }
 
     directionsDisplay = new google.maps.DirectionsRenderer();
