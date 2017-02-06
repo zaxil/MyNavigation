@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Transfer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>ViewBag:</h2>
+<b>Imię:</b> @ViewBag.First_name <br />
+<b>Nazwisko:</b> @ViewBag.last_name <br />
+@foreach(var digit in ViewBag.Digits)
+{
+    @digit
+}
+
+<h2>ViewData</h2>
+<b>Imię:</b> @ViewData["First_name"] <br />
+<b>Nazwisko</b> @ViewData["Last_name"] <br />
+@foreach(var digit in ViewData["Digits"] as List<int>)
+{
+    @digit
+}
+<h2>Transfer</h2>
+

@@ -1,4 +1,5 @@
 ﻿
+@model MyNavigation.Models.Address
 @{
     ViewBag.Title = "Trasa przejazdu";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,8 +12,9 @@
 </script>
 <script language="JavaScript" type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
 
-<h2>Index</h2>
-<div>
+<h2>@ViewBag.Title</h2>
+
+@*@<div>
     <p>
         @Html.Label("Miejsce wyjazdu:")
         @Html.TextBox("MiejsceWyjazdu", null, new { id = "Text1" })
@@ -25,7 +27,24 @@
     <p>
         <input id="Button1" type="button" value="Wyznacz trase" onclick="draftRoute('Text1', 'Text2');" />
     </p>
-</div>
+</div>*@
 
+@using (Html.BeginForm())
+{
+    <div>
+        <div class="editor-label"> @Html.LabelFor(m => m.DeparturePlace, "Miejsce wyjazdu:")</div>
+
+        <div class="editor-field"> @Html.TextBoxFor(m => m.DeparturePlace, new { id = "Text1" })</div>
+
+        <div class="editor-label"> @Html.LabelFor(m => m.DestinationPlace, "Miejsce docelowe:")</div>
+
+        <div class="editor-field"> @Html.TextBoxFor(m=> m.DestinationPlace, new { id = "Text2" })</div>
+
+        <p>
+            <input id="Button1" type="submit" value="Wyznacz Trasę" />
+        </p>
+    </div>
+
+}
 <div id="map" style="position:relative; width:400px; height:400px;"></div>
 

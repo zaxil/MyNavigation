@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NavigationDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="TraceId" />
+    </Key>
+    <Property Name="TraceId" Type="Int32" Nullable="false" />
+    <Property Name="DeparturePlace" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="DestinationPlace" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="NavigationDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+  </EntityContainer>
+</Schema>
